@@ -1,0 +1,284 @@
+
+#svg {
+    display: block;
+    margin: auto;
+}
+
+/** La souris change pour un curseur sur un département et le contour est noir avec une épaisseur assez fine */
+.department {
+    cursor: pointer;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: rgb(0, 0, 0);
+    stroke-width: .5px;
+}
+
+/** Au survol d'un département le contour devient plus épais */
+.department:hover {
+    stroke-width: 1px;
+}
+
+/** Le tooltip est défini avec des propriétés statiques qui conviennent à nos données */
+.map-tooltip {
+
+    position: absolute;
+    text-align: center;
+    z-index: 1000;
+    color: black;
+    width: 160px;
+    height: 60px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: rgb(190, 190, 190);
+    border: 0px;
+    pointer-events: none;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13.5px;
+    background-color: #e4e3e3c6 !important;
+}
+
+#svg {
+    display: block;
+    margin: auto;
+}
+
+.select-field {
+    margin-top: -3rem;
+    margin-bottom: 5rem;
+}
+
+/*NAV*/
+
+.navbar {
+    opacity: 0.8;
+    border-bottom: 1.5px solid rgb(2, 75, 210);
+}
+
+.container-nav {
+    margin: 0 auto;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    color: #eeeeee;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+nav ul li a {
+    padding: 1rem 0;
+    margin: 0 3rem;
+    position: relative;
+    letter-spacing: 3px;
+}
+
+nav ul li a:last-child {
+    margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(22, 101, 247);
+    left: 0;
+    transform: scaleX(0);
+    transition: all .3s;
+}
+
+nav ul li a::before {
+    top: 0;
+    transform-origin: left;
+}
+
+nav ul li a::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/*-----*/
+
+#conformitySelector {
+    text-align: center;
+}
+
+/* To style the div that contains all the sliders (month and year)*/
+.slidercontainer {
+
+    width: 100%;
+    /* Width of the slide container */
+    text-align: center;
+    /* useless since slidecontainer takes 100% of width */
+}
+
+/* Common style between all sliders */
+.slider {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 80%;
+    height: 25px;
+    background-color: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+/* When the curser is on a slider make it opaque */
+.slider:hover {
+    opacity: 1;
+}
+.slider:hover + .slidervalue {
+    display: block;
+}
+
+/* The slider handle for Chrome, Opera, Safari, Edge, ... */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 25px;
+    background: #04aa6d;
+    cursor: pointer;
+    transition: all ease-in-out 0.05s;
+    width: 5%;
+}
+
+/* Same thing as before for Firefox */
+.slider::-moz-range-thumb {
+    height: 25px;
+    background: #04aa6d;
+    cursor: pointer;
+    transition: all ease-in-out 0.05s;
+    width: 5%;
+}
+
+
+.slidervalue {
+    display: none;
+    position: relative;
+    left: 50%;
+    bottom: 6rem;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    width: 9rem;
+    text-align: center;
+    background-color: #04aa6d;
+    padding: 1rem;
+    color: #fff;
+    margin: 0;
+    white-space: nowrap;
+}
+.slidervalue::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-top: 1rem solid #04aa6d;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    bottom: -1rem;
+    transform: translate(-50%, -45%);
+    -webkit-transform: translate(-50%, -45%);
+    -ms-transform: translate(-50%, -45%);
+}
+
+/* .slidervalue {
+    display: inline-block;
+    width: 5.5rem;
+    position: relative;
+    bottom: 8px;
+    color: #fff;
+    opacity: .9;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 3px;
+    background: rgb(0, 0, 0);
+    margin-left: 10px;
+    padding-inline: 5px;
+}
+
+.slidervalue::after {
+    position: absolute;
+    top: 8px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid rgb(0, 0, 0);
+    border-bottom: 7px solid transparent;
+    content: '';
+} */
+
+/* To adapt display to screen size */
+@media screen and (max-width: 700px) {
+
+    nav ul li a {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .brand {
+        font-size: 5rem;
+    }
+
+}
+
+
+#map h3 {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#stackedBarChart h3 {
+    margin-top: 1.5rem;
+    margin-left: 5.5rem;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#stackedBarChart{
+    margin-left: 3rem;
+    
+}
+#conformitySelector input{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+#conformitySelector label{
+    font-weight: 200;
+}
+

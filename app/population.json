@@ -1,0 +1,1002 @@
+[
+ {
+   "CODE_REG": 82,
+   "NOM_REGION": "Rhône-Alpes",
+   "CODE_DEPT": "01",
+   "NOM_DEPT": "Ain",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 43,
+   "NB_COMMUNES": 419,
+   "POP": 614331
+ },
+ {
+   "CODE_REG": 22,
+   "NOM_REGION": "Picardie",
+   "CODE_DEPT": "02",
+   "NOM_DEPT": "Aisne",
+   "NB_ARRONDS": 5,
+   "NB_CANTONS": 42,
+   "NB_COMMUNES": 816,
+   "POP": 555094
+ },
+ {
+   "CODE_REG": 83,
+   "NOM_REGION": "Auvergne",
+   "CODE_DEPT": "03",
+   "NOM_DEPT": "Allier",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 35,
+   "NB_COMMUNES": 320,
+   "POP": 353124
+ },
+ {
+   "CODE_REG": 93,
+   "NOM_REGION": "Provence-Alpes-Côte d'Azur",
+   "CODE_DEPT": "04",
+   "NOM_DEPT": "Alpes-de-Haute-Provence",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 30,
+   "NB_COMMUNES": 200,
+   "POP": 165155
+ },
+ {
+   "CODE_REG": 93,
+   "NOM_REGION": "Provence-Alpes-Côte d'Azur",
+   "CODE_DEPT": "05",
+   "NOM_DEPT": "Hautes-Alpes",
+   "NB_ARRONDS": 2,
+   "NB_CANTONS": 30,
+   "NB_COMMUNES": 177,
+   "POP": 142312
+ },
+ {
+   "CODE_REG": 93,
+   "NOM_REGION": "Provence-Alpes-Côte d'Azur",
+   "CODE_DEPT": "06",
+   "NOM_DEPT": "Alpes-Maritimes",
+   "NB_ARRONDS": 2,
+   "NB_CANTONS": 52,
+   "NB_COMMUNES": 163,
+   "POP": 1094579
+ },
+ {
+   "CODE_REG": 82,
+   "NOM_REGION": "Rhône-Alpes",
+   "CODE_DEPT": "07",
+   "NOM_DEPT": "Ardèche",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 33,
+   "NB_COMMUNES": 339,
+   "POP": 324885
+ },
+ {
+   "CODE_REG": 21,
+   "NOM_REGION": "Champagne-Ardenne",
+   "CODE_DEPT": "08",
+   "NOM_DEPT": "Ardennes",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 37,
+   "NB_COMMUNES": 463,
+   "POP": 291678
+ },
+ {
+   "CODE_REG": 73,
+   "NOM_REGION": "Midi-Pyrénées",
+   "CODE_DEPT": "09",
+   "NOM_DEPT": "Ariège",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 22,
+   "NB_COMMUNES": 332,
+   "POP": 157582
+ },
+ {
+   "CODE_REG": 21,
+   "NOM_REGION": "Champagne-Ardenne",
+   "CODE_DEPT": "10",
+   "NOM_DEPT": "Aube",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 33,
+   "NB_COMMUNES": 433,
+   "POP": 311720
+ },
+ {
+   "CODE_REG": 91,
+   "NOM_REGION": "Languedoc-Roussillon",
+   "CODE_DEPT": "11",
+   "NOM_DEPT": "Aude",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 35,
+   "NB_COMMUNES": 438,
+   "POP": 365854
+ },
+ {
+   "CODE_REG": 73,
+   "NOM_REGION": "Midi-Pyrénées",
+   "CODE_DEPT": "12",
+   "NOM_DEPT": "Aveyron",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 46,
+   "NB_COMMUNES": 304,
+   "POP": 288364
+ },
+ {
+   "CODE_REG": 93,
+   "NOM_REGION": "Provence-Alpes-Côte d'Azur",
+   "CODE_DEPT": "13",
+   "NOM_DEPT": "Bouches-du-Rhône",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 57,
+   "NB_COMMUNES": 119,
+   "POP": 2000550
+ },
+ {
+   "CODE_REG": 25,
+   "NOM_REGION": "Basse-Normandie",
+   "CODE_DEPT": "14",
+   "NOM_DEPT": "Calvados",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 49,
+   "NB_COMMUNES": 706,
+   "POP": 699561
+ },
+ {
+   "CODE_REG": 83,
+   "NOM_REGION": "Auvergne",
+   "CODE_DEPT": "15",
+   "NOM_DEPT": "Cantal",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 27,
+   "NB_COMMUNES": 260,
+   "POP": 154135
+ },
+ {
+   "CODE_REG": 54,
+   "NOM_REGION": "Poitou-Charentes",
+   "CODE_DEPT": "16",
+   "NOM_DEPT": "Charente",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 35,
+   "NB_COMMUNES": 404,
+   "POP": 364429
+ },
+ {
+   "CODE_REG": 54,
+   "NOM_REGION": "Poitou-Charentes",
+   "CODE_DEPT": "17",
+   "NOM_DEPT": "Charente-Maritime",
+   "NB_ARRONDS": 5,
+   "NB_CANTONS": 51,
+   "NB_COMMUNES": 472,
+   "POP": 640803
+ },
+ {
+   "CODE_REG": 24,
+   "NOM_REGION": "Centre",
+   "CODE_DEPT": "18",
+   "NOM_DEPT": "Cher",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 35,
+   "NB_COMMUNES": 290,
+   "POP": 319600
+ },
+ {
+   "CODE_REG": 74,
+   "NOM_REGION": "Limousin",
+   "CODE_DEPT": "19",
+   "NOM_DEPT": "Corrèze",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 37,
+   "NB_COMMUNES": 286,
+   "POP": 252235
+ },
+ {
+   "CODE_REG": 94,
+   "NOM_REGION": "Corse",
+   "CODE_DEPT": "2A",
+   "NOM_DEPT": "Corse-du-Sud",
+   "NB_ARRONDS": 2,
+   "NB_CANTONS": 22,
+   "NB_COMMUNES": 124,
+   "POP": 145998
+ },
+ {
+   "CODE_REG": 94,
+   "NOM_REGION": "Corse",
+   "CODE_DEPT": "2B",
+   "NOM_DEPT": "Haute-Corse",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 30,
+   "NB_COMMUNES": 236,
+   "POP": 168869
+ },
+ {
+   "CODE_REG": 26,
+   "NOM_REGION": "Bourgogne",
+   "CODE_DEPT": "21",
+   "NOM_DEPT": "Côte-d'Or",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 43,
+   "NB_COMMUNES": 706,
+   "POP": 538505
+ },
+ {
+   "CODE_REG": 53,
+   "NOM_REGION": "Bretagne",
+   "CODE_DEPT": "22",
+   "NOM_DEPT": "Côtes-d'Armor",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 52,
+   "NB_COMMUNES": 373,
+   "POP": 612383
+ },
+ {
+   "CODE_REG": 74,
+   "NOM_REGION": "Limousin",
+   "CODE_DEPT": "23",
+   "NOM_DEPT": "Creuse",
+   "NB_ARRONDS": 2,
+   "NB_CANTONS": 27,
+   "NB_COMMUNES": 260,
+   "POP": 127919
+ },
+ {
+   "CODE_REG": 72,
+   "NOM_REGION": "Aquitaine",
+   "CODE_DEPT": "24",
+   "NOM_DEPT": "Dordogne",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 50,
+   "NB_COMMUNES": 557,
+   "POP": 426607
+ },
+ {
+   "CODE_REG": 43,
+   "NOM_REGION": "Franche-Comté",
+   "CODE_DEPT": "25",
+   "NOM_DEPT": "Doubs",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 35,
+   "NB_COMMUNES": 594,
+   "POP": 542509
+ },
+ {
+   "CODE_REG": 82,
+   "NOM_REGION": "Rhône-Alpes",
+   "CODE_DEPT": "26",
+   "NOM_DEPT": "Drôme",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 36,
+   "NB_COMMUNES": 369,
+   "POP": 499313
+ },
+ {
+   "CODE_REG": 23,
+   "NOM_REGION": "Haute-Normandie",
+   "CODE_DEPT": "27",
+   "NOM_DEPT": "Eure",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 43,
+   "NB_COMMUNES": 675,
+   "POP": 603194
+ },
+ {
+   "CODE_REG": 24,
+   "NOM_REGION": "Centre",
+   "CODE_DEPT": "28",
+   "NOM_DEPT": "Eure-et-Loir",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 29,
+   "NB_COMMUNES": 402,
+   "POP": 440291
+ },
+ {
+   "CODE_REG": 53,
+   "NOM_REGION": "Bretagne",
+   "CODE_DEPT": "29",
+   "NOM_DEPT": "Finistère",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 54,
+   "NB_COMMUNES": 283,
+   "POP": 929286
+ },
+ {
+   "CODE_REG": 91,
+   "NOM_REGION": "Languedoc-Roussillon",
+   "CODE_DEPT": "30",
+   "NOM_DEPT": "Gard",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 46,
+   "NB_COMMUNES": 353,
+   "POP": 726285
+ },
+ {
+   "CODE_REG": 73,
+   "NOM_REGION": "Midi-Pyrénées",
+   "CODE_DEPT": "31",
+   "NOM_DEPT": "Haute-Garonne",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 53,
+   "NB_COMMUNES": 589,
+   "POP": 1268370
+ },
+ {
+   "CODE_REG": 73,
+   "NOM_REGION": "Midi-Pyrénées",
+   "CODE_DEPT": "32",
+   "NOM_DEPT": "Gers",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 31,
+   "NB_COMMUNES": 463,
+   "POP": 195489
+ },
+ {
+   "CODE_REG": 72,
+   "NOM_REGION": "Aquitaine",
+   "CODE_DEPT": "33",
+   "NOM_DEPT": "Gironde",
+   "NB_ARRONDS": 6,
+   "NB_CANTONS": 63,
+   "NB_COMMUNES": 542,
+   "POP": 1479277
+ },
+ {
+   "CODE_REG": 91,
+   "NOM_REGION": "Languedoc-Roussillon",
+   "CODE_DEPT": "34",
+   "NOM_DEPT": "Hérault",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 49,
+   "NB_COMMUNES": 343,
+   "POP": 1062617
+ },
+ {
+   "CODE_REG": 53,
+   "NOM_REGION": "Bretagne",
+   "CODE_DEPT": "35",
+   "NOM_DEPT": "Ille-et-Vilaine",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 53,
+   "NB_COMMUNES": 353,
+   "POP": 1015470
+ },
+ {
+   "CODE_REG": 24,
+   "NOM_REGION": "Centre",
+   "CODE_DEPT": "36",
+   "NOM_DEPT": "Indre",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 26,
+   "NB_COMMUNES": 247,
+   "POP": 238261
+ },
+ {
+   "CODE_REG": 24,
+   "NOM_REGION": "Centre",
+   "CODE_DEPT": "37",
+   "NOM_DEPT": "Indre-et-Loire",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 37,
+   "NB_COMMUNES": 277,
+   "POP": 605819
+ },
+ {
+   "CODE_REG": 82,
+   "NOM_REGION": "Rhône-Alpes",
+   "CODE_DEPT": "38",
+   "NOM_DEPT": "Isère",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 58,
+   "NB_COMMUNES": 533,
+   "POP": 1233759
+ },
+ {
+   "CODE_REG": 43,
+   "NOM_REGION": "Franche-Comté",
+   "CODE_DEPT": "39",
+   "NOM_DEPT": "Jura",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 34,
+   "NB_COMMUNES": 544,
+   "POP": 271973
+ },
+ {
+   "CODE_REG": 72,
+   "NOM_REGION": "Aquitaine",
+   "CODE_DEPT": "40",
+   "NOM_DEPT": "Landes",
+   "NB_ARRONDS": 2,
+   "NB_CANTONS": 30,
+   "NB_COMMUNES": 331,
+   "POP": 397766
+ },
+ {
+   "CODE_REG": 24,
+   "NOM_REGION": "Centre",
+   "CODE_DEPT": "41",
+   "NOM_DEPT": "Loir-et-Cher",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 30,
+   "NB_COMMUNES": 291,
+   "POP": 340729
+ },
+ {
+   "CODE_REG": 82,
+   "NOM_REGION": "Rhône-Alpes",
+   "CODE_DEPT": "42",
+   "NOM_DEPT": "Loire",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 40,
+   "NB_COMMUNES": 327,
+   "POP": 766729
+ },
+ {
+   "CODE_REG": 83,
+   "NOM_REGION": "Auvergne",
+   "CODE_DEPT": "43",
+   "NOM_DEPT": "Haute-Loire",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 35,
+   "NB_COMMUNES": 260,
+   "POP": 231877
+ },
+ {
+   "CODE_REG": 52,
+   "NOM_REGION": "Pays de la Loire",
+   "CODE_DEPT": "44",
+   "NOM_DEPT": "Loire-Atlantique",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 59,
+   "NB_COMMUNES": 221,
+   "POP": 1317685
+ },
+ {
+   "CODE_REG": 24,
+   "NOM_REGION": "Centre",
+   "CODE_DEPT": "45",
+   "NOM_DEPT": "Loiret",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 41,
+   "NB_COMMUNES": 334,
+   "POP": 674913
+ },
+ {
+   "CODE_REG": 73,
+   "NOM_REGION": "Midi-Pyrénées",
+   "CODE_DEPT": "46",
+   "NOM_DEPT": "Lot",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 31,
+   "NB_COMMUNES": 340,
+   "POP": 181232
+ },
+ {
+   "CODE_REG": 72,
+   "NOM_REGION": "Aquitaine",
+   "CODE_DEPT": "47",
+   "NOM_DEPT": "Lot-et-Garonne",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 40,
+   "NB_COMMUNES": 319,
+   "POP": 342500
+ },
+ {
+   "CODE_REG": 91,
+   "NOM_REGION": "Languedoc-Roussillon",
+   "CODE_DEPT": "48",
+   "NOM_DEPT": "Lozère",
+   "NB_ARRONDS": 2,
+   "NB_CANTONS": 25,
+   "NB_COMMUNES": 185,
+   "POP": 81281
+ },
+ {
+   "CODE_REG": 52,
+   "NOM_REGION": "Pays de la Loire",
+   "CODE_DEPT": "49",
+   "NOM_DEPT": "Maine-et-Loire",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 41,
+   "NB_COMMUNES": 363,
+   "POP": 808298
+ },
+ {
+   "CODE_REG": 25,
+   "NOM_REGION": "Basse-Normandie",
+   "CODE_DEPT": "50",
+   "NOM_DEPT": "Manche",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 52,
+   "NB_COMMUNES": 601,
+   "POP": 517121
+ },
+ {
+   "CODE_REG": 21,
+   "NOM_REGION": "Champagne-Ardenne",
+   "CODE_DEPT": "51",
+   "NOM_DEPT": "Marne",
+   "NB_ARRONDS": 5,
+   "NB_CANTONS": 44,
+   "NB_COMMUNES": 620,
+   "POP": 579533
+ },
+ {
+   "CODE_REG": 21,
+   "NOM_REGION": "Champagne-Ardenne",
+   "CODE_DEPT": "52",
+   "NOM_DEPT": "Haute-Marne",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 32,
+   "NB_COMMUNES": 438,
+   "POP": 191004
+ },
+ {
+   "CODE_REG": 52,
+   "NOM_REGION": "Pays de la Loire",
+   "CODE_DEPT": "53",
+   "NOM_DEPT": "Mayenne",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 32,
+   "NB_COMMUNES": 261,
+   "POP": 317006
+ },
+ {
+   "CODE_REG": 41,
+   "NOM_REGION": "Lorraine",
+   "CODE_DEPT": "54",
+   "NOM_DEPT": "Meurthe-et-Moselle",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 44,
+   "NB_COMMUNES": 594,
+   "POP": 746502
+ },
+ {
+   "CODE_REG": 41,
+   "NOM_REGION": "Lorraine",
+   "CODE_DEPT": "55",
+   "NOM_DEPT": "Meuse",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 31,
+   "NB_COMMUNES": 500,
+   "POP": 200509
+ },
+ {
+   "CODE_REG": 53,
+   "NOM_REGION": "Bretagne",
+   "CODE_DEPT": "56",
+   "NOM_DEPT": "Morbihan",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 42,
+   "NB_COMMUNES": 261,
+   "POP": 744663
+ },
+ {
+   "CODE_REG": 41,
+   "NOM_REGION": "Lorraine",
+   "CODE_DEPT": "57",
+   "NOM_DEPT": "Moselle",
+   "NB_ARRONDS": 9,
+   "NB_CANTONS": 51,
+   "NB_COMMUNES": 730,
+   "POP": 1066667
+ },
+ {
+   "CODE_REG": 26,
+   "NOM_REGION": "Bourgogne",
+   "CODE_DEPT": "58",
+   "NOM_DEPT": "Nièvre",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 32,
+   "NB_COMMUNES": 312,
+   "POP": 226997
+ },
+ {
+   "CODE_REG": 31,
+   "NOM_REGION": "Nord-Pas-de-Calais",
+   "CODE_DEPT": "59",
+   "NOM_DEPT": "Nord",
+   "NB_ARRONDS": 6,
+   "NB_CANTONS": 79,
+   "NB_COMMUNES": 650,
+   "POP": 2617939
+ },
+ {
+   "CODE_REG": 22,
+   "NOM_REGION": "Picardie",
+   "CODE_DEPT": "60",
+   "NOM_DEPT": "Oise",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 41,
+   "NB_COMMUNES": 693,
+   "POP": 823668
+ },
+ {
+   "CODE_REG": 25,
+   "NOM_REGION": "Basse-Normandie",
+   "CODE_DEPT": "61",
+   "NOM_DEPT": "Orne",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 40,
+   "NB_COMMUNES": 505,
+   "POP": 301421
+ },
+ {
+   "CODE_REG": 31,
+   "NOM_REGION": "Nord-Pas-de-Calais",
+   "CODE_DEPT": "62",
+   "NOM_DEPT": "Pas-de-Calais",
+   "NB_ARRONDS": 7,
+   "NB_CANTONS": 77,
+   "NB_COMMUNES": 895,
+   "POP": 1489209
+ },
+ {
+   "CODE_REG": 83,
+   "NOM_REGION": "Auvergne",
+   "CODE_DEPT": "63",
+   "NOM_DEPT": "Puy-de-Dôme",
+   "NB_ARRONDS": 5,
+   "NB_CANTONS": 61,
+   "NB_COMMUNES": 470,
+   "POP": 649643
+ },
+ {
+   "CODE_REG": 72,
+   "NOM_REGION": "Aquitaine",
+   "CODE_DEPT": "64",
+   "NOM_DEPT": "Pyrénées-Atlantiques",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 52,
+   "NB_COMMUNES": 547,
+   "POP": 674908
+ },
+ {
+   "CODE_REG": 73,
+   "NOM_REGION": "Midi-Pyrénées",
+   "CODE_DEPT": "65",
+   "NOM_DEPT": "Hautes-Pyrénées",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 34,
+   "NB_COMMUNES": 474,
+   "POP": 237945
+ },
+ {
+   "CODE_REG": 91,
+   "NOM_REGION": "Languedoc-Roussillon",
+   "CODE_DEPT": "66",
+   "NOM_DEPT": "Pyrénées-Orientales",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 31,
+   "NB_COMMUNES": 226,
+   "POP": 457238
+ },
+ {
+   "CODE_REG": 42,
+   "NOM_REGION": "Alsace",
+   "CODE_DEPT": "67",
+   "NOM_DEPT": "Bas-Rhin",
+   "NB_ARRONDS": 7,
+   "NB_CANTONS": 44,
+   "NB_COMMUNES": 527,
+   "POP": 1115226
+ },
+ {
+   "CODE_REG": 42,
+   "NOM_REGION": "Alsace",
+   "CODE_DEPT": "68",
+   "NOM_DEPT": "Haut-Rhin",
+   "NB_ARRONDS": 6,
+   "NB_CANTONS": 31,
+   "NB_COMMUNES": 377,
+   "POP": 765634
+ },
+ {
+   "CODE_REG": 82,
+   "NOM_REGION": "Rhône-Alpes",
+   "CODE_DEPT": "69",
+   "NOM_DEPT": "Rhône",
+   "NB_ARRONDS": 2,
+   "NB_CANTONS": 54,
+   "NB_COMMUNES": 293,
+   "POP": 1756069
+ },
+ {
+   "CODE_REG": 43,
+   "NOM_REGION": "Franche-Comté",
+   "CODE_DEPT": "70",
+   "NOM_DEPT": "Haute-Saône",
+   "NB_ARRONDS": 2,
+   "NB_CANTONS": 32,
+   "NB_COMMUNES": 545,
+   "POP": 247311
+ },
+ {
+   "CODE_REG": 26,
+   "NOM_REGION": "Bourgogne",
+   "CODE_DEPT": "71",
+   "NOM_DEPT": "Saône-et-Loire",
+   "NB_ARRONDS": 5,
+   "NB_CANTONS": 57,
+   "NB_COMMUNES": 573,
+   "POP": 574874
+ },
+ {
+   "CODE_REG": 52,
+   "NOM_REGION": "Pays de la Loire",
+   "CODE_DEPT": "72",
+   "NOM_DEPT": "Sarthe",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 40,
+   "NB_COMMUNES": 375,
+   "POP": 579497
+ },
+ {
+   "CODE_REG": 82,
+   "NOM_REGION": "Rhône-Alpes",
+   "CODE_DEPT": "73",
+   "NOM_DEPT": "Savoie",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 37,
+   "NB_COMMUNES": 305,
+   "POP": 428751
+ },
+ {
+   "CODE_REG": 82,
+   "NOM_REGION": "Rhône-Alpes",
+   "CODE_DEPT": "74",
+   "NOM_DEPT": "Haute-Savoie",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 34,
+   "NB_COMMUNES": 294,
+   "POP": 760979
+ },
+ {
+   "CODE_REG": 11,
+   "NOM_REGION": "Île-de-France",
+   "CODE_DEPT": "75",
+   "NOM_DEPT": "Paris",
+   "NB_ARRONDS": 1,
+   "NB_CANTONS": 20,
+   "NB_COMMUNES": 1,
+   "POP": 2268265
+ },
+ {
+   "CODE_REG": 23,
+   "NOM_REGION": "Haute-Normandie",
+   "CODE_DEPT": "76",
+   "NOM_DEPT": "Seine-Maritime",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 69,
+   "NB_COMMUNES": 744,
+   "POP": 1275952
+ },
+ {
+   "CODE_REG": 11,
+   "NOM_REGION": "Île-de-France",
+   "CODE_DEPT": "77",
+   "NOM_DEPT": "Seine-et-Marne",
+   "NB_ARRONDS": 5,
+   "NB_CANTONS": 43,
+   "NB_COMMUNES": 514,
+   "POP": 1347008
+ },
+ {
+   "CODE_REG": 11,
+   "NOM_REGION": "Île-de-France",
+   "CODE_DEPT": "78",
+   "NOM_DEPT": "Yvelines",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 39,
+   "NB_COMMUNES": 262,
+   "POP": 1435448
+ },
+ {
+   "CODE_REG": 54,
+   "NOM_REGION": "Poitou-Charentes",
+   "CODE_DEPT": "79",
+   "NOM_DEPT": "Deux-Sèvres",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 33,
+   "NB_COMMUNES": 305,
+   "POP": 380569
+ },
+ {
+   "CODE_REG": 22,
+   "NOM_REGION": "Picardie",
+   "CODE_DEPT": "80",
+   "NOM_DEPT": "Somme",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 46,
+   "NB_COMMUNES": 782,
+   "POP": 583388
+ },
+ {
+   "CODE_REG": 73,
+   "NOM_REGION": "Midi-Pyrénées",
+   "CODE_DEPT": "81",
+   "NOM_DEPT": "Tarn",
+   "NB_ARRONDS": 2,
+   "NB_CANTONS": 46,
+   "NB_COMMUNES": 323,
+   "POP": 387099
+ },
+ {
+   "CODE_REG": 73,
+   "NOM_REGION": "Midi-Pyrénées",
+   "CODE_DEPT": "82",
+   "NOM_DEPT": "Tarn-et-Garonne",
+   "NB_ARRONDS": 2,
+   "NB_CANTONS": 30,
+   "NB_COMMUNES": 195,
+   "POP": 248227
+ },
+ {
+   "CODE_REG": 93,
+   "NOM_REGION": "Provence-Alpes-Côte d'Azur",
+   "CODE_DEPT": "83",
+   "NOM_DEPT": "Var",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 43,
+   "NB_COMMUNES": 153,
+   "POP": 1026222
+ },
+ {
+   "CODE_REG": 93,
+   "NOM_REGION": "Provence-Alpes-Côte d'Azur",
+   "CODE_DEPT": "84",
+   "NOM_DEPT": "Vaucluse",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 24,
+   "NB_COMMUNES": 151,
+   "POP": 555240
+ },
+ {
+   "CODE_REG": 52,
+   "NOM_REGION": "Pays de la Loire",
+   "CODE_DEPT": "85",
+   "NOM_DEPT": "Vendée",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 31,
+   "NB_COMMUNES": 282,
+   "POP": 654096
+ },
+ {
+   "CODE_REG": 54,
+   "NOM_REGION": "Poitou-Charentes",
+   "CODE_DEPT": "86",
+   "NOM_DEPT": "Vienne",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 38,
+   "NB_COMMUNES": 281,
+   "POP": 438566
+ },
+ {
+   "CODE_REG": 74,
+   "NOM_REGION": "Limousin",
+   "CODE_DEPT": "87",
+   "NOM_DEPT": "Haute-Vienne",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 42,
+   "NB_COMMUNES": 201,
+   "POP": 384781
+ },
+ {
+   "CODE_REG": 41,
+   "NOM_REGION": "Lorraine",
+   "CODE_DEPT": "88",
+   "NOM_DEPT": "Vosges",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 31,
+   "NB_COMMUNES": 515,
+   "POP": 392846
+ },
+ {
+   "CODE_REG": 26,
+   "NOM_REGION": "Bourgogne",
+   "CODE_DEPT": "89",
+   "NOM_DEPT": "Yonne",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 42,
+   "NB_COMMUNES": 455,
+   "POP": 353366
+ },
+ {
+   "CODE_REG": 43,
+   "NOM_REGION": "Franche-Comté",
+   "CODE_DEPT": "90",
+   "NOM_DEPT": "Territoire de Belfort",
+   "NB_ARRONDS": 1,
+   "NB_CANTONS": 15,
+   "NB_COMMUNES": 102,
+   "POP": 146475
+ },
+ {
+   "CODE_REG": 11,
+   "NOM_REGION": "Île-de-France",
+   "CODE_DEPT": "91",
+   "NOM_DEPT": "Essonne",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 42,
+   "NB_COMMUNES": 196,
+   "POP": 1233645
+ },
+ {
+   "CODE_REG": 11,
+   "NOM_REGION": "Île-de-France",
+   "CODE_DEPT": "92",
+   "NOM_DEPT": "Hauts-de-Seine",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 45,
+   "NB_COMMUNES": 36,
+   "POP": 1590749
+ },
+ {
+   "CODE_REG": 11,
+   "NOM_REGION": "Île-de-France",
+   "CODE_DEPT": "93",
+   "NOM_DEPT": "Seine-Saint-Denis",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 40,
+   "NB_COMMUNES": 40,
+   "POP": 1534895
+ },
+ {
+   "CODE_REG": 11,
+   "NOM_REGION": "Île-de-France",
+   "CODE_DEPT": "94",
+   "NOM_DEPT": "Val-de-Marne",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 49,
+   "NB_COMMUNES": 47,
+   "POP": 1340868
+ },
+ {
+   "CODE_REG": 11,
+   "NOM_REGION": "Île-de-France",
+   "CODE_DEPT": "95",
+   "NOM_DEPT": "Val-d'Oise",
+   "NB_ARRONDS": 3,
+   "NB_CANTONS": 39,
+   "NB_COMMUNES": 185,
+   "POP": 1187836
+ },
+ {
+   "CODE_REG": 1,
+   "NOM_REGION": "Guadeloupe",
+   "CODE_DEPT": "971",
+   "NOM_DEPT": "Guadeloupe",
+   "NB_ARRONDS": 2,
+   "NB_CANTONS": 40,
+   "NB_COMMUNES": 32,
+   "POP": 409905
+ },
+ {
+   "CODE_REG": 2,
+   "NOM_REGION": "Martinique",
+   "CODE_DEPT": "972",
+   "NOM_DEPT": "Martinique",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 45,
+   "NB_COMMUNES": 34,
+   "POP": 400535
+ },
+ {
+   "CODE_REG": 3,
+   "NOM_REGION": "Guyane",
+   "CODE_DEPT": "973",
+   "NOM_DEPT": "Guyane",
+   "NB_ARRONDS": 2,
+   "NB_CANTONS": 19,
+   "NB_COMMUNES": 22,
+   "POP": 231167
+ },
+ {
+   "CODE_REG": 4,
+   "NOM_REGION": "La Réunion",
+   "CODE_DEPT": "974",
+   "NOM_DEPT": "La Réunion",
+   "NB_ARRONDS": 4,
+   "NB_CANTONS": 49,
+   "NB_COMMUNES": 24,
+   "POP": 829903
+ }
+]
