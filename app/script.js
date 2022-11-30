@@ -26,9 +26,26 @@ Promise.all(promises).then(function(values) {
     const json_data = values[1]; 
     const data_nitrate = values[2];
     
-
+    const quantile_circles =(number) =>{
+        if(number<25){
+            return 0;
+        }
+        else if(number<40){
+            return 1;
+        }
+        else if(number<50){
+            return 2;
+        }
+        else{
+            return 3;
+        }
+    }
 
     const circles = d3.select('#svg').append("g")
+
+    var colorScale_circles = d3.scaleQuantize()
+        .domain([0,4])
+        .range(["#ADD8E6","yellow","orange","red"]);
 
     const svg_circle = circles.selectAll('circle')
         .data(data_nitrate["eau_souterraines"])
@@ -36,8 +53,8 @@ Promise.all(promises).then(function(values) {
         .append("circle")
         .attr("cx",d=> projection([d["Longitude"],d["Latitude"]])[0])
         .attr("cy", d=>projection([d["Longitude"],d["Latitude"]])[1])
-        .attr("r", 3)
-        .style("fill", "red")
+        .attr("r", 1.5)
+        .style("fill", d=>colorScale_circles(quantile_circles(d["ND_AvgAnnValue"])))
 
 
     var features = deps
