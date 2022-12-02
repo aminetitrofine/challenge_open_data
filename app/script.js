@@ -16,6 +16,7 @@ const svg = d3.select('#map').append("svg")
     .attr("class","map");
 
 const deps = svg.append("g");
+const circles = d3.select('#svg').append("g");
 
 var promises = [] ;
 promises.push(d3.json('https://france-geojson.gregoiredavid.fr/repo/departements.geojson'));
@@ -41,22 +42,9 @@ Promise.all(promises).then(function(values) {
         }
     }
 
-    const circles = d3.select('#svg').append("g")
+    
 
-    var colorScale_circles = d3.scaleQuantize()
-        .domain([0,4])
-        .range(["#ADD8E6","yellow","orange","red"]);
-
-    const svg_circle = circles.selectAll('circle')
-        .data(data_nitrate["eau_souterraines"])
-        .enter()
-        .append("circle")
-        .attr("cx",d=> projection([d["Longitude"],d["Latitude"]])[0])
-        .attr("cy", d=>projection([d["Longitude"],d["Latitude"]])[1])
-        .attr("r", 1.5)
-        .style("fill", d=>colorScale_circles(quantile_circles(d["ND_AvgAnnValue"])))
-
-
+    
     var features = deps
         .selectAll("path")
         .data(geojson.features)
@@ -67,6 +55,49 @@ Promise.all(promises).then(function(values) {
 
     
     var drawMap = (confirmType,year,month)=>{
+        var colorScale_circles = d3.scaleQuantize()
+        .domain([0,4])
+        .range(["#ADD8E6","yellow","orange","red"]);
+
+        const svg_circle = circles.selectAll('circle')
+            .data(data_nitrate["eau_souterraines"])
+            .enter()
+            .append("circle")
+            .attr("cx",d=> projection([d["Longitude"],d["Latitude"]])[0])
+            .attr("cy", d=>projection([d["Longitude"],d["Latitude"]])[1])
+            .attr("r", 1.5)
+            .style("fill", d=>colorScale_circles(quantile_circles(d["ND_AvgAnnValue"])))
+
+
+        d3.select("#legend_circle").remove();
+        var legend_circle = svg.append('g')
+            .attr('transform', 'translate(100, 480)')
+            .attr('id', 'legend_circle');
+        
+        legend_circle.selectAll('.colorbar')
+            .data(d3.range(4))
+            .enter()
+            .append('svg:circle')
+            .attr('cy', '0px')
+            .attr('cx', d=> d* 150 + 'px')
+            .attr("r",5)
+            .attr("fill",d=>colorScale_circles(d))
+
+        d3.select("#legendScale_circle").remove();
+        var legendScale_circle = svg.append('g')
+            .attr('transform', 'translate(110, 485)')
+            .attr('id', 'legendScale_circle');
+        
+        const colorValues = ["NO3 moins de 25","25 à moins de 40","40 à moins de 50","50 ou plus"]
+        legendScale_circle.selectAll('.textColor')
+            .data(colorValues)
+            .enter()
+            .append('svg:text')
+            .attr('y', '0px')
+            .attr('x', d=> colorValues.indexOf(d)* 150 + 'px')
+            .text(d=>d)
+
+
         const data = json_data[year-startYear][year][month]['departs'];
             // variation de 9 cols entre 0 et max
         var quantile = d3.scaleQuantile()
@@ -81,7 +112,7 @@ Promise.all(promises).then(function(values) {
         var legend = svg.append('g')
             .attr('transform', 'translate(560, 150)')
             .attr('id', 'legend');
-    
+        
         legend.selectAll('.colorbar')
             .data(d3.range(9))
             .enter().append('svg:rect')
