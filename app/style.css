@@ -124,9 +124,7 @@ nav ul li a:hover::after {
 
 /*-----*/
 
-#conformitySelector {
-    text-align: center;
-}
+
 
 /* To style the div that contains all the sliders (month and year)*/
 .slidercontainer {
@@ -273,12 +271,23 @@ nav ul li a:hover::after {
     margin-left: 3rem;
     
 }
+
+#conformitySelector,#sourceSelector {
+    text-align: center;
+}
 #conformitySelector input{
     margin-left: 2rem;
     margin-bottom: 2rem;
 }
 
-#conformitySelector label{
+#conformitySelector label , #sourceSelector label{
     font-weight: 200;
 }
+
+
+#sourceSelector input{
+    margin-left: 1.5rem;
+}
+
+
 

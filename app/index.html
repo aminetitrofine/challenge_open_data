@@ -58,12 +58,21 @@
             <h3>Carte de conformité de l'eau par région</h3>
             <div id="tooltip"></div>
           </div>
+          <div id="sourceSelector">
+   
+
+            <input type="radio" id="sourceSelectorRob" name="sourceSelector" value="sourceRob"  checked/>
+            <label for="sourceSelectorRob">Conformité de robinet</label>
+
+            <input type="radio" id="sourceSelectorSrc" name="sourceSelector" value="sourceSrc"   />
+            <label for="sourceSelectorSrc">Conformité de captage</label>
+          </div>
 
           <div id="conformitySelector">
-            <input type="radio" id="conformitySelectorChim" name="conformitySelector" value="conformchimique" />
+            <input type="radio" id="conformitySelectorChim" name="conformitySelector" value="conformchimique" checked/>
             <label for="conformitySelectorChim">Conformité chimique</label>
 
-            <input type="radio" id="conformitySelectorBact" name="conformitySelector" value="conformbacterio" checked />
+            <input type="radio" id="conformitySelectorBact" name="conformitySelector" value="conformbacterio"  />
             <label for="conformitySelectorBact">Conformité bacteriologique</label>
             
           </div>

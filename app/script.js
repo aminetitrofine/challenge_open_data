@@ -21,11 +21,13 @@ const circles = d3.select('#svg').append("g");
 var promises = [] ;
 promises.push(d3.json('https://france-geojson.gregoiredavid.fr/repo/departements.geojson'));
 promises.push(d3.json('https://raw.githubusercontent.com/aminetitrofine/open-data/main/Result.json'));
+promises.push(d3.json("https://raw.githubusercontent.com/aminetitrofine/open-data/main/Resultat_conformit%C3%A9.json"));
 promises.push(d3.json('https://raw.githubusercontent.com/aminetitrofine/open-data/main/Result_nitrate.json'));
 Promise.all(promises).then(function(values) {
     const geojson = values[0]; 
     const json_data = values[1]; 
-    const data_nitrate = values[2];
+    const json_data_captage = values[2];
+    const data_nitrate = values[3];
     
     const quantile_circles =(number) =>{
         if(number<25){
@@ -42,9 +44,6 @@ Promise.all(promises).then(function(values) {
         }
     }
 
-    
-
-    
     var features = deps
         .selectAll("path")
         .data(geojson.features)
@@ -54,7 +53,7 @@ Promise.all(promises).then(function(values) {
         .attr("d", path);
 
     
-    var drawMap = (confirmType,year,month)=>{
+    var drawMap = (sourceType,confirmType,year,month)=>{
         var colorScale_circles = d3.scaleQuantize()
         .domain([0,4])
         .range(["#ADD8E6","yellow","orange","red"]);
@@ -99,6 +98,7 @@ Promise.all(promises).then(function(values) {
 
 
         const data = json_data[year-startYear][year][month]['departs'];
+        const data_captage = json_data_captage[year-startYear][year][month]['departs'];
             // variation de 9 cols entre 0 et max
         var quantile = d3.scaleQuantile()
             .domain([50, 100])
@@ -133,31 +133,68 @@ Promise.all(promises).then(function(values) {
             .attr('id','legendAxis')
             .call(d3.axisRight(legendScale).ticks(6));
 
-
-        data.forEach(function(e,i) {
-            d3.select("#d" + e['cddept'].substring(1,3))
-                .attr("fill",colorScale(quantile(+e[confirmType])))
-                .on("mouseover", function(event, d) {
-                    div.transition()        
-                        .duration(200)      
-                        .style("opacity", .9);
-                    div.html("Code : " + d.properties.code + "<br/>"
-                        + "Région : " + d.properties.nom + "<br/>"
-                        + "conformité bactériologique : " + e[confirmType] + "<br/>")
-                        .style("left", (event.pageX + 30) + "px")     
-                        .style("top", (event.pageY - 30) + "px");
-        
-                })
-                .on("mouseout", function(event, d) {
-                        div.style("opacity", 0);
-                        div.html("")
-                            .style("left", "-500px")
-                            .style("top", "-500px");
+        //same as old data
+        if(sourceType==="sourceRob"){
+            data.forEach(function(e,i) {
+                d3.select("#d" + e['cddept'].substring(1,3))
+                    .attr("fill",colorScale(quantile(+e[confirmType])))
+                    .on("mouseover", function(event, d) {
+                        div.transition()        
+                            .duration(200)      
+                            .style("opacity", .9);
+                        div.html("Code : " + d.properties.code + "<br/>"
+                            + "Région : " + d.properties.nom + "<br/>"
+                            + "conformité : " + e[confirmType] + "<br/>")
+                            .style("left", (event.pageX + 30) + "px")     
+                            .style("top", (event.pageY - 30) + "px");
+            
+                    })
+                    .on("mouseout", function(event, d) {
+                            div.style("opacity", 0);
+                            div.html("")
+                                .style("left", "-500px")
+                                .style("top", "-500px");
+                    });
                 });
-            });
-            d3.select("select").on("change", function() {
-                d3.selectAll("svg").attr("class", this.value);
-            });
+                d3.select("select").on("change", function() {
+                    d3.selectAll("svg").attr("class", this.value);
+                });
+        }
+        
+        
+        else {
+            if(confirmType==="conformbacterio"){
+                selector = "confbacteriocaptage";
+            }
+            else{
+                selector = "confchimiquecaptage";
+            }
+            data_captage.forEach(function(e,i) {
+                d3.select("#d" + e['cddept'].substring(1,3))
+                    .attr("fill",colorScale(quantile(+e[selector])))
+                    .on("mouseover", function(event, d) {
+                        div.transition()        
+                            .duration(200)      
+                            .style("opacity", .9);
+                        div.html("Code : " + d.properties.code + "<br/>"
+                            + "Région : " + d.properties.nom + "<br/>"
+                            + "conformité : " + e[selector] + "<br/>")  
+                            .style("left", (event.pageX + 30) + "px")     
+                            .style("top", (event.pageY - 30) + "px");
+            
+                    })
+                    .on("mouseout", function(event, d) {
+                            div.style("opacity", 0);
+                            div.html("")
+                                .style("left", "-500px")
+                                .style("top", "-500px");
+                    });
+                });
+                d3.select("select").on("change", function() {
+                    d3.selectAll("svg").attr("class", this.value);
+                });
+        }
+        
         
     }
 
@@ -261,19 +298,25 @@ Promise.all(promises).then(function(values) {
                     .attr("width",x.bandwidth())
     }
 
-    let confirmType="conformbacterio";
+    let sourceType="sourceRob";
+    let confirmType="conformchimique";
     let year = startYear;
     let month = 0;
-    drawMap(confirmType,year,month);
+    drawMap(sourceType,confirmType,year,month);
     d3.selectAll("input[name='conformitySelector']").on("change", function(e){
         confirmType = e.currentTarget.value;
-        drawMap(confirmType,year,month);
+        drawMap(sourceType,confirmType,year,month);
+    });
+
+    d3.selectAll("input[name='sourceSelector']").on("change", function(e){
+        sourceType = e.currentTarget.value;
+        drawMap(sourceType,confirmType,year,month);
     });
 
     d3.selectAll("#dateslider").on("change", function(e){
         year = startYear + Math.floor(e.currentTarget.value/12)
         month = e.currentTarget.value%12;
-        drawMap(confirmType,year,month);
+        drawMap(sourceType,confirmType,year,month);
         drawStackedBar(year,month);
     });
     drawStackedBar(year,month);
