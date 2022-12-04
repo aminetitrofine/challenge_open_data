@@ -101,12 +101,12 @@ Promise.all(promises).then(function(values) {
         const data_captage = json_data_captage[year-startYear][year][month]['departs'];
             // variation de 9 cols entre 0 et max
         var quantile = d3.scaleQuantile()
-            .domain([50, 100])
-            .range(d3.range(9));
+            .domain([0, 100])
+            .range(d3.range(11));
 
         var colorScale = d3.scaleQuantize()
-            .domain([0,9])
-            .range(colorbrewer.Greens[9]);
+            .domain([0,11])
+            .range(["#f7fcf5","#e8f6e3","#d3eecd","#b7e2b1","#97d494","#73c378","#4daf62","#2f984f","#157f3b","#036429","#00441b"]);
         
         d3.select("#legend").remove();
         var legend = svg.append('g')
@@ -114,18 +114,18 @@ Promise.all(promises).then(function(values) {
             .attr('id', 'legend');
         
         legend.selectAll('.colorbar')
-            .data(d3.range(9))
+            .data(d3.range(11))
             .enter().append('svg:rect')
                 .attr('y', d => d * 20 + 'px')
                 .attr('height', '20px')
                 .attr('width', '20px')
                 .attr('x', '0px')
-                .attr("class", d => "q" + d + "-9")
+                .attr("class", d => "q" + d + "-11")
                 .attr("fill",d=>colorScale(d))
 
         var legendScale = d3.scaleLinear()
-            .domain([50, 100])
-            .range([0, 9 * 20]);
+            .domain([0, 100])
+            .range([0, 11 * 20]);
 
         d3.select("#legendAxis").remove();
         var legendAxis = svg.append("g")
@@ -171,7 +171,7 @@ Promise.all(promises).then(function(values) {
             }
             data_captage.forEach(function(e,i) {
                 d3.select("#d" + e['cddept'].substring(1,3))
-                    .attr("fill",colorScale(quantile(+e[selector])))
+                    .attr("fill",(e[selector]===-1) ? "#6B6B6B": colorScale(quantile(+e[selector])))
                     .on("mouseover", function(event, d) {
                         div.transition()        
                             .duration(200)      
